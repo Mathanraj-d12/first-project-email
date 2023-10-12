@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    /* cursor: pointer; */
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#d2001a,#2f14f9);
+    /* background: linear-gradient(to right, #ff4500, #ff9900); */
+    /* background: linear-gradient(to bottom, #3498db, #e74c3c); */
+    /* background: linear-gradient(to right, #333, #666, #fffdfd); */
+
+
+    animation: color 12s ease-in-out infinite;
+    background-size: 300% 300%;
+
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+form{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 20px;
+    border-left: 2px solid rgba(31,38,135,.39);
+    border-top: 2px solid rgba(31,38,135,.39);
+
+}
+
+form::before{
+    content: '';
+    position: absolute;
+    bottom: 6%;
+    right: 31%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg,#d2001a,#1c1b21);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+
+}
+form::after{
+    content: '';
+    position: absolute;
+    top: 13%;
+    left: 33%;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg,#d2001a,#1c1b21);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    margin-bottom: 10%;
+    margin-top: 20px;
+    opacity: .9;
+
+}
+
+
+label{
+    font-size: 25px;
+    color: rgb(202, 200, 200);
+    margin-left: 10%;
+    opacity: .9;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    
+}
+
+
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom:7%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+}
+
+button{
+    width: 50%;
+    margin: 3% auto;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    background: rgb(160, 238, 146);
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    opacity: .8;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(31,38,135,.37);
+    border-left: 1px solid rgba(31,38,135,.39);
+    border-right: 2px solid rgba(31,38,135,.39);
+    border-top: 1px solid rgba(31,38,135,.39);
+    border-bottom: 2px solid rgba(31,38,135,.39);
+    cursor: pointer;
+}
+
+a{
+    font-size: 18px;
+    text-align: center;
+    opacity: .7;
+    cursor: pointer;
+}
